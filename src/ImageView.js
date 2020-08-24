@@ -740,6 +740,7 @@ export default class ImageView extends Component<PropsType, StateType> {
             >
                 <Animated.Image
                     resizeMode="cover"
+                    resizeMethod={'resize'}
                     source={image.source}
                     style={this.getImageStyle(image, index)}
                     onLoad={(): void => this.onImageLoaded(index)}
